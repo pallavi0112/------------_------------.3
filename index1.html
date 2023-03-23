@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Temperature Coverter</title>
+</head>
+<body>
+    <h2>Temperature Converter</h2>
+    <div class="main_container">
+      <div class="imgBx">
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <lottie-player src="https://assets4.lottiefiles.com/temp/lf20_V92Q4R.json"  background="transparent"  speed="0.5"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+      </div>
+      <div class="evaluate_sec">
+        <div>
+            <label for="deg">Degree</label>
+            <input type="text" id="deg" />
+        </div>
+        <div>
+            <label for="type">Types</label>
+            <input type="radio" id="c" name="deg_type" value="celsius">
+            <label for="c">Celsius</label>
+            <input type="radio" id="f" name="deg_type" value="fahrenheit">
+            <label for="f">Fahrenheit</label>
+        </div>
+        <input type="button" value="Convert" id="converterBtn">
+        <div>
+            <label for="type">Result</label>
+            <div id="result">0</div>
+        </div>
+
+      </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
